@@ -1,4 +1,4 @@
-# personal-website
-Personal Website.
+# Personal Website
+
 
 My portfolio website, which can be reached at www.donatkabashi.com

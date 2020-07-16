@@ -66,7 +66,8 @@ img {
     margin-bottom: 10rem;
 }
 
-.section-heading h1 {
+
+/* .section-heading h1 {
     font-size: 3.5rem;
     color: rgba(255, 255, 255, .3);
     text-transform: uppercase;
@@ -83,7 +84,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.75)
-}
+} */
 
 .section-heading h1::before {
     width: 10rem;
@@ -171,8 +172,8 @@ li {
     position: absolute;
     top: 5rem;
     right: 5rem;
-    width: 3.1vw;
-    height: 3vw;
+    width: 5.1rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -243,7 +244,7 @@ li {
 }
 
 #quote {
-    font-size: 1.1vw;
+    font-size: 2.1rem;
     border-left: 10px solid var(--combo2);
     padding-left: 3%;
 }
@@ -251,7 +252,7 @@ li {
 #status {
     margin-top: 3%;
     padding-left: 3%;
-    font-size: 1vw;
+    font-size: 2rem;
     color: #878A8F;
 }
 
@@ -264,15 +265,15 @@ li {
     background-color: var(--combo1);
     color: white;
     border-radius: 8px;
-    font-size: 1.1vw;
-    padding: 0.5vw;
+    font-size: 2rem;
+    padding: 16px;
     cursor: pointer;
-    box-shadow: 0 0.3vw var(--textSecondary);
+    box-shadow: 0 9px var(--textSecondary);
 }
 
 .landingButton:active {
     background-color: var(--combo2);
-    box-shadow: 0 0.1vw #666;
+    box-shadow: 0 4px #666;
     transform: translateY(50px);
 }
 
@@ -282,7 +283,7 @@ li {
 
 .fa-globe-americas {
     color: var(--combo1);
-    font-size: 1.2vw;
+    font-size: 2.1rem;
 }
 
 .highlight {
@@ -629,9 +630,59 @@ input[typle="submit"]:hover {
 
 /*Start media queries*/
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1363px) and (max-width: 1723px) {
     .landing-text {
-        top: 35%;
+        top: 45%;
+    }
+    .landingButton {
+        font-size: 1.3rem;
+        padding: 9px;
+        box-shadow: 0 6px var(--textSecondary);
+    }
+    .landing-text #buttons {
+        margin-top: -2%;
+    }
+    .landing-text img {
+        width: 60%;
+    }
+    .landing-text .description {
+        left: 10%;
+        right: 10%;
+    }
+    #quote {
+        font-size: 1.7rem;
+    }
+    #status {
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1362px) {
+    .landing-text {
+        top: 50%;
+    }
+    .landingButton {
+        font-size: 1.3rem;
+        padding: 9px;
+        box-shadow: 0 6px var(--textSecondary);
+    }
+    .landing-text #buttons {
+        margin-top: -3%;
+    }
+    .landing-text img {
+        width: 60%;
+    }
+    .landing-text .description {
+        left: 10%;
+        right: 10%;
+    }
+    #quote {
+        font-size: 1.7rem;
+    }
+    #status {
+        margin-top: 2%;
+        font-size: 1.5rem;
     }
 }
 

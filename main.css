@@ -220,11 +220,11 @@ li {
     transform: rotate(-450deg) translateX(-.8rem);
 }
 
+.underNav {
+    margin-top: 5%;
+}
+
 .landing-text {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -632,7 +632,7 @@ input[typle="submit"]:hover {
 
 @media (min-width: 1363px) and (max-width: 1723px) {
     .landing-text {
-        top: 45%;
+        margin-top: 7%;
     }
     .landingButton {
         font-size: 1.3rem;
@@ -660,7 +660,7 @@ input[typle="submit"]:hover {
 
 @media (min-width: 1025px) and (max-width: 1362px) {
     .landing-text {
-        top: 50%;
+        margin-top: 7%;
     }
     .landingButton {
         font-size: 1.3rem;

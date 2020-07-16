@@ -21,6 +21,18 @@ $(document).ready(function() {
         }, 2000);
     });
 
+    $('#readAboutMe').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $('.about').offset().top - 100
+        }, 2000);
+    });
+
+    $('#viewProjects').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $('.portfolio').offset().top - 100
+        }, 2000);
+    });
+
     AOS.init({
         easing: 'ease',
         duration: 1800,

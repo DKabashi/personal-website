@@ -1,5 +1,14 @@
 /*Start global*/
 
+ :root {
+    --combo1: #00BFA6;
+    --combo2: #29ac95;
+    /* #23a393 */
+    --background: white;
+    --textPrimary: black;
+    --textSecondary: #3f3d56
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +17,15 @@
 
 html {
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
-    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--textPrimary);
 }
 
 body {
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg") no-repeat center fixed;
+    /* background: url("images/sitebg.jpg") no-repeat center fixed; */
+    background: var(--background);
     background-size: cover;
 }
 
@@ -103,6 +113,13 @@ img {
 
 /*Start header*/
 
+.logo {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    width: 20%;
+}
+
 header {
     widows: 100%;
     height: 100vh;
@@ -112,9 +129,9 @@ header {
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: -100vh;
+    top: -150vh;
     z-index: 50;
-    background-color: #16162d;
+    background-color: var(--combo1);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -134,15 +151,13 @@ li {
 }
 
 .nav-link {
-    /* change the font */
-    font-family: 'The Historia Demo', sans-serif;
     font-size: 5rem;
     padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, var(--combo1), var(--combo2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -156,8 +171,8 @@ li {
     position: absolute;
     top: 5rem;
     right: 5rem;
-    width: 5rem;
-    height: 4rem;
+    width: 3.1vw;
+    height: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,10 +186,14 @@ li {
 }
 
 .bar {
-    background: linear-gradient(to right, #ffe838, #fd57bf);
+    background: linear-gradient(to right, var(--textSecondary), var(--combo2));
     width: 100%;
     height: 4px;
     border-radius: .8rem;
+}
+
+.open .bar {
+    background: linear-gradient(to right, white, var(--combo1));
 }
 
 .bar.half {
@@ -202,7 +221,7 @@ li {
 
 .landing-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -210,11 +229,70 @@ li {
     z-index: 1;
 }
 
+.landing-text img {
+    width: 50%;
+    height: auto;
+}
+
+.landing-text .description {
+    margin-top: 3%;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    text-align: left;
+}
+
+#quote {
+    font-size: 1.1vw;
+    border-left: 10px solid var(--combo2);
+    padding-left: 3%;
+}
+
+#status {
+    margin-top: 3%;
+    padding-left: 3%;
+    font-size: 1vw;
+    color: #878A8F;
+}
+
+.landing-text #buttons {
+    margin-top: -1%;
+    float: right;
+}
+
+.landingButton {
+    background-color: var(--combo1);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1vw;
+    padding: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0 0.3vw var(--textSecondary);
+}
+
+.landingButton:active {
+    background-color: var(--combo2);
+    box-shadow: 0 0.1vw #666;
+    transform: translateY(50px);
+}
+
+.landingButton:hover {
+    background-color: var(--combo2);
+}
+
+.fa-globe-americas {
+    color: var(--combo1);
+    font-size: 1.2vw;
+}
+
+.highlight {
+    color: var(--textSecondary);
+    font-weight: 800;
+}
+
 .landing-text h1 {
     font-size: 20rem;
-    /* change the font */
-    font-family: sans-serif;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, var(--combo1), var(--combo2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -282,7 +360,7 @@ li {
 }
 
 .fa-dribbble-square:hover {
-    color: #ea4c89;
+    color: var(--combo2);
 }
 
 
@@ -316,18 +394,18 @@ li {
 .icon-container {
     width: 10rem;
     height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    border: 3px solid var(--combo1);
+    background-color: var(--combo2);
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i {
-    color: #ffe838;
+    color: var(--combo1);
     font-size: 5rem;
     margin: auto;
-    transform: rotate(-45deg);
+    transform: rgb(169, 14, 107);
 }
 
 
@@ -388,7 +466,7 @@ li {
 /*Start timeline*/
 
 .timeline ul {
-    border-left: 4px solid #ffe838;
+    border-left: 4px solid var(--combo1);
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -438,7 +516,7 @@ li {
 
 .timeline .date::after {
     content: '';
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px var(--combo2);
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
@@ -472,12 +550,12 @@ textarea {
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: #fd57bf;
+    outline-color: var(--combo2);
 }
 
 input[typle="submit"] {
     width: initial;
-    background-color: #fd57bf;
+    background-color: var(--combo2);
     color: #eee;
     padding: 1rem 2rem;
     border-radius: .8rem;
@@ -487,7 +565,7 @@ input[typle="submit"] {
 
 input[typle="submit"]:hover {
     color: #221e3f;
-    background-color: #ffe838;
+    background-color: var(--combo1);
 }
 
 
@@ -551,9 +629,63 @@ input[typle="submit"]:hover {
 
 /*Start media queries*/
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .landing-text {
+        top: 35%;
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .landing-text {
+        top: 25%;
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {
+    .landing-text {
+        top: 35%;
+    }
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 819px) and (orientation: landscape) {
+    .landing-text {
+        top: 55%;
+    }
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .landing-text {
+        top: 18%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
-        background: url("images/sitebg2.jpg") no-repeat center fixed;
+        /* background: url("images/sitebg2.jpg") no-repeat center fixed; */
         background-size: cover;
     }
     .landing-text h1 {
@@ -603,8 +735,8 @@ input[typle="submit"]:hover {
 
 @media screen and (max-width: 600px) {
     .menu-toggler {
-        top: 2rem;
-        right: 2rem;
+        /* top: 2rem;
+        right: 2rem; */
     }
     .landing-text h1 {
         font-size: 8rem;

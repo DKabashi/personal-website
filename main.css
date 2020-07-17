@@ -123,8 +123,6 @@ img {
 header {
     widows: 100%;
     height: 100vh;
-    position: relative;
-    overflow: hidden;
 }
 
 .top-nav {

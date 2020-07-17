@@ -685,6 +685,10 @@ input[typle="submit"]:hover {
         margin-top: 2%;
         font-size: 1.5rem;
     }
+    .menu-toggler {
+        width: 55px;
+        height: 4.1rem;
+    }
 }
 
 
@@ -693,7 +697,48 @@ input[typle="submit"]:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 1000px) and (max-width: 1024px) {
+    .landing-text img {
+        content: url(images/dk2.png);
+        width: 70%;
+    }
+    .landing-text #buttons {
+        margin-top: -3%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .landing-text img {
+        content: url(images/dk2.png);
+        width: 80%;
+    }
+    .landing-text #buttons {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .landingButton {
+        font-size: 1.3rem;
+        padding: 9px;
+        box-shadow: 0 6px var(--textSecondary);
+    }
+    .landing-text .description {
+        left: 10%;
+        right: 10%;
+    }
+    #quote {
+        font-size: 1.7rem;
+    }
+    #status {
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+    .menu-toggler {
+        width: 55px;
+        height: 4.1rem;
+    }
+}
 
 
 /* 

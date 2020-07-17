@@ -695,6 +695,9 @@ input[typle="submit"]:hover {
   ##Screen = B/w 768px to 1024px
 */
 
+
+/* iPad Pro */
+
 @media (min-width: 1000px) and (max-width: 1024px) {
     .landing-text img {
         content: url(images/dk2.png);
@@ -704,6 +707,9 @@ input[typle="submit"]:hover {
         margin-top: -3%;
     }
 }
+
+
+/* ipad Mini */
 
 @media (min-width: 768px) and (max-width: 999px) {
     .landing-text img {
@@ -750,7 +756,17 @@ input[typle="submit"]:hover {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {
+    .logo {
+        width: 30%;
+        content: url(images/DKLogo.png);
+        margin-bottom: 3%;
+    }
+    .landing-text img {
+        content: url(images/dk.png);
+        width: 55%;
+    }
+}
 
 
 /* 

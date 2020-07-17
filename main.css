@@ -708,7 +708,7 @@ input[typle="submit"]:hover {
 @media (min-width: 768px) and (max-width: 999px) {
     .landing-text img {
         content: url(images/dk2.png);
-        width: 60%;
+        width: 55%;
     }
     .landing-text #buttons {
         margin-top: 5%;

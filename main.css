@@ -244,6 +244,7 @@ li {
 
 #quote {
     font-size: 2.1rem;
+    font-weight: 500;
     border-left: 10px solid var(--combo2);
     padding-left: 3%;
 }
@@ -782,7 +783,41 @@ input[typle="submit"]:hover {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {}
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo {
+        width: 45%;
+        content: url(images/DKLogo2.png);
+        margin-bottom: 5%;
+    }
+    .landingButton {
+        font-size: 1.3rem;
+        padding: 9px;
+        box-shadow: 0 6px var(--textSecondary);
+    }
+    .landing-text #buttons {
+        margin-top: 10%;
+    }
+    .landing-text .description {
+        left: 2%;
+        right: 2%;
+    }
+    #quote {
+        font-size: 1.7rem;
+    }
+    #status {
+        margin-top: 5%;
+        font-size: 1.5rem;
+    }
+    .menu-toggler {
+        top: 15px;
+        width: 30px;
+        height: 2.5rem;
+    }
+    .landing-text img {
+        content: url(images/dk2.png);
+        width: 60%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     body {

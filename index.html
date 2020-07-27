@@ -7,14 +7,16 @@
     <title>Donat Kabashi</title>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,900;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
 </head>
 
 <body>
     <header>
-        <div class="logo">
+        <div class="logo" data-aos="fade-right">
             <img src="images/DKLogo.png">
         </div>
 
@@ -38,12 +40,6 @@
                 <li>
                     <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
-                <li>
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
             </ul>
         </nav>
 
@@ -55,139 +51,267 @@
                 <img src="images/dk.png">
 
                 <div class="description">
-                    <p id="quote">Donat is a Computer Science graduate, who is extremely passionate about
-                        <span class="highlight">mobile iOS development.</span> He creates software with unique functionalities, focused on usable, and intuitive UI/UX , while committing to clean code, agile development, and appropriate design patterns.</p>
-                    <p id="status"> <i class="fas fa-globe-americas"></i> Available for remote jobs, and/or freelance oppotunities</p>
+                    <p id="quote" data-aos="flip-down" data-aos-duration="2000">Donat is a Computer Science graduate, who is extremely passionate about
+                        <span class="highlight">mobile iOS development.</span> He creates software with unique functionalities, focused on usable, and intuitive UI/UX while committing to clean code, agile development, and appropriate design patterns.</p>
+                    <p id="status" data-aos="flip-up" data-aos-delay="700"> <i class="fas fa-globe-americas"></i> Available for remote jobs, and freelance oppotunities</p>
                     <div id="buttons">
-                        <a class="landingButton has-margin-right" id="readAboutMe">Read About Me</a>
+                        <a class="landingButton has-margin-right" id="readAboutMe" data-aos="fade-up-left" data-aos-delay="900">Read About Me</a>
 
-                        <a class="landingButton" id="viewProjects">View Projects</a>
+                        <a class="landingButton" id="viewProjects" data-aos="fade-up-left" data-aos-delay="1100">View Projects</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- <section class="about" id="about">
+    <section class="services" id="services">
         <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-                <img src="images/profile.jpeg" alt="">
+            <div class="section-heading">
+                <h1 data-aos="fade-down">Services</h1>
+                <h6 data-aos="fade-up" data-aos-delay="300">What I can do for you</h6>
             </div>
-            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-                <div class="about-heading">
+            <div class="my-skills">
+                <div class="skill" data-aos="fade-up-right" data-aos-delay="600">
+                    <div class="serviceImage">
+                        <img src="images/serviceMobile.png">
+                    </div>
+                    <h1>iOS Mobile Development</h1>
+                    <p>iOS mobile development is Donat’s specialization. He dedicates most of his learning, problem-solving, and software creation in Apple’s iOS platform, using the modern Swift programming language. Donat is responsible for designing, and
+                        building advanced innovative applications that meet the client’s business needs, and ensure user satisfaction. The developer is always up to date with the latest frameworks and advancements of Apple technologies in order to build
+                        the next generation of mobile apps.</p>
+                </div>
+                <div class="skill" data-aos="fade-up-left" data-aos-delay="1000">
+                    <div class="serviceImage">
+                        <img src="images/serviceWeb.png">
+                    </div>
+                    <h1>Front-End Web Development</h1>
+                    <p>Donat started his career as a Front End Developer and has more than 2 years of experience in this field. He is capable of combining the art of design and the magic of programming to deliver beautiful and responsive websites with great
+                        user experience. He uses mainly Javascript, JQuery, CSS, and Bootstrap for complex websites. Alternatively, WordPress is used for faster delivery of low complexity websites, and/or when CMS is required by the user.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1 data-aos="fade-down">Portfolio</h1>
+                <h6 data-aos="fade-up" data-aos-delay="300">View some of my recent work</h6>
+
+
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="all" class="btn active" data-aos="flip-left"><i class="fas fa-file-code"></i> <p class="filter">All</p></button>
+                <button type="button" id="ios" class="btn" data-aos="flip-left" data-aos-delay="400"><i class="fas fa-mobile-alt"></i><p class="filter">Mobile App</p></button>
+                <button type="button" id="web" class="btn" data-aos="flip-left" data-aos-delay="700"><i class="fas fa-desktop"></i><p class="filter">Web</p></button>
+                <button type="button" id="game" class="btn" data-aos="flip-left" data-aos-delay="1000"><i class="fas fa-gamepad"></i><p class="filter">Game</p></button>
+
+
+            </div>
+
+
+
+            <div class="infScroll" id="parent">
+
+                <div class="portfolio-item ios">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="700">
+                        <img src="images/App_Vision.png" alt="">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+
+                        <h6><i class="devicon-swift-plain colored"></i> iOS App | Individual Project</h6>
+                        <h1>Vision Aid</h1>
+                        <p>This project is designed and developed specifically for blind people 👨‍🦯. It helps them understand and navigate their surroundings through several functionalities. It uses machine learning techniques to analyze the device senosors
+                            to provide valuable output through sounds.</p>
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> CoreML (for object detection, depth estimation, image classification), Vision, Speech, CoreLocation (for local weather prediction), UIKit, AVFoundation: AVSpeechSynthesizer and
+                            AVAudioPlayer, Swift, CocoaPods: SwiftyJSON and Alamofire (for communication with OpenWeatherApi).</p>
+                        <a href="https://drive.google.com/drive/folders/1jhWydVK2BNmnJS26k-iyIsTylLb1cRMn?usp=sharing" class="cta">Read More</a>
+                    </div>
+
+                </div>
+                <div class="portfolio-item web">
+                    <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <h6><i class="devicon-javascript-plain colored"></i> <i class="devicon-laravel-plain colored"></i> Web | Group Project</h6>
+                        <h1>Sustaina Social Network</h1>
+                        <p>This is a web social network that helps its users identify and reduce consumption of unnecessary resources 💧 ⚡️ 🏠 in order to collectively spread awareness on environmental protection.
+                        </p>
+                        <p class="techUsed"><span class="highlight">My role:</span> Design, and implement the front-end for the entire project and make it responsive for all devices, while also documenting my work.</p>
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> Javascript, CSS, Bootstrap, Laravel, Ajax, ChartJS, communication with our client's API. </p>
+
+                    </div>
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="700">
+                        <img src="images/Web_Sustaina.png" alt="">
+                    </div>
+
+                </div>
+                <div class="portfolio-item ios">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="700">
+                        <img src="images/App_SimpleNews.png" alt="">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                        <h6><i class="devicon-swift-plain colored"></i> iOS App | Individual Project</h6>
+                        <h1>Simple News</h1>
+                        <p>This is an app that displays the latest news based on the 7 most popular categories. The project was implemented to apply my knowledge in the new SwiftUI technology.</p>
+
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> Swift, SwiftUI, WebKit, CocoaPods: SwiftyJSON and Alamofire (for communication with NewsAPI) </p>
+
+                    </div>
+                </div>
+                <div class="portfolio-item game" style="display:none">
+
+                    <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <h6><i class="devicon-csharp-plain colored"></i> Unity Game | Group Project</h6>
+                        <h1>The Dark Forest</h1>
+                        <p>Is a single player top-down 2D game. The player aims to defeat the Ancient Tree final boss to return peace on the dark forest. There are various enemies, weapons, and powerups that make this game both challenging and extremely
+                            fun to play.
+                        </p>
+                        <p class="techUsed"><span class="highlight">My role:</span> Design all the game elements in Adobe Photoshop using my imagination, animate them in Unity Engine, and implement various functionalities in the team's code using C#.</p>
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> Unity2D, Unity UI, C# Scripting, Adobe Photoshop, Unity Animations. </p>
+                        <a href="https://thedarkforest.itch.io/the-dark-forest" class="cta">Play Game</a>
+                    </div>
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="700">
+                        <img src="images/Game_Forest.png" alt="">
+                    </div>
+
+                </div>
+                <div class="portfolio-item web" style="display:none">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="700">
+                        <img src="images/Web_Diabetes.png" alt="">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                        <h6><i class="devicon-javascript-plain colored"></i> <i class="devicon-java-plain colored"></i> Web | Individual Project</h6>
+                        <h1>Diabetes Monitoring App</h1>
+                        <p>This is a web app for users with diabetes. It allows them to easily fill and view their diabetes-related data, so they can be monitored from their professional doctors online. In addition, confidentiality, integrity, and availability
+                            are provided by this platform for the user.
+                        </p>
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> Java, J2EE, Javascript, Bootstrap, JQuery(to dynamically present data from the RESTful back-end developed in J2EE), Heroku, PostgreSQL</p>
+
+                    </div>
+                </div>
+                <div class="portfolio-item web" style="display:none">
+
+                    <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <h6><i class="devicon-javascript-plain colored"></i> <i class="devicon-php-plain colored"></i> Web | Individual Project
+                        </h6>
+                        <h1>Movie Hunter</h1>
+                        <p>This is a movie recommendation system that aims to significantly reduce the time spent on deciding on a movie to watch. The user can either pick a random movie, spin roulette of the greatest movies, or use the recommendation system.
+                        </p>
+                        <p class="techUsed"><span class="highlight">My role:</span> Design the website, and contribute to the front-end + PHP code.
+                        </p>
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> Javascript, CSS, Ajax, PHP, communication with TheMovieDatabase API </p>
+
+                    </div>
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="700">
+                        <img src="images/Web_Movie.png" alt="">
+                    </div>
+
+                </div>
+                <div class="portfolio-item web" style="display:none">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="700">
+                        <img src="images/Web_Relaxer.png" alt="">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+                        <h6><i class="devicon-javascript-plain colored"></i> Front End Web | Individual Project
+                        </h6>
+                        <h1>Relaxer</h1>
+                        <p>This is a web project for relaxing your brain with smooth animations and calm music. The project was implemented to apply my knowledge in CSS Animations.
+                        </p>
+                        <p class="techUsed"><span class="highlight">Technologies used:</span> Javascript, CSS Animations, Heroku</p>
+                        <a href="https://simply-relax.herokuapp.com/" class="cta">Visit Website</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div style="text-align:center;" data-aos="fade-up" data-aos-delay="300">
+            <a id="loadMore" class="landingButton">Load More</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-heading">
+            <h1 data-aos="fade-down">About Me</h1>
+            <h6 data-aos="fade-up" data-aos-delay="300">Learn more about the developer</h6>
+            <div class="aboutIMG">
+                <img src="images/dkProfile.png" data-aos="flip-up" data-aos-delay="600">
+            </div>
+        </div>
+        <div class="container">
+
+
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+                <!-- <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corrupti eligendi ea, aliquam recusandae impedit iste necessitatibus quae, vitae doloribus error. Corrupti eum atque provident aliquid quae nesciunt temporibus ab.
+                </div> -->
+                <p data-aos="zoom-in-left" data-aos-delay="300"> <span style="padding-left:5em"></span>Before I start, thank you for spending 5 minutes of your precious time to read about me. As you may have already noticed, my name is Donat Kabashi (btw it’s not donut 🍩 😄). I am 21 years old, from
+                    a small and beautiful country called Kosovo 🇽🇰. Despite spending half of my life in front of a computer writing code every day, I am a very friendly, and positive person with great communication skills. I love learning new things
+                    and improving my self daily. I practice self-motivation and organize my life in prioritized to-do lists because I believe that consistency is one of the main ingredients to achieve anything you desire. My ultimate goal is to bring
+                    value to humanity and find solutions to protect our beautiful planet 🌎. Apart from coding, I watch various programming tutorials on Udemy or Linkedin Learning 🖥, read books about self-improvements 📖, drink plenty of coffee ☕️, sleep
+                    around 8 hours 🛌, eat healthy 🍏, meditate 🧘🏻‍♂️, spend some time with my amazing family 👨‍👩‍👦‍👦, and exercise regularly 🏃🏻‍♂️.
+                </p>
+                <p data-aos="zoom-in-right" data-aos-delay="700" style="margin-top:5rem;"> <span style="padding-left:5em; "></span>I am hugely passionate about programming 👨🏻‍💻, because it gives you a magical skill to create amazing stuff, or solve real-life problems. I have a Computer Science degree 👨‍🎓 from the University
+                    of Sheffield, which I graduated in June 2020. My programming career started with Java, which taught me the principles of programming and how to think like one. I also did an internship as a “Java Lab Assistant” to help first level
+                    students in their programming journey. Additionally, I have more than 2 years of experience in Web Development, where I have created beautiful and useful websites both individually and with different teams of amazing developers. Moreover,
+                    I have some experience in Game Development, creating websites with WordPress for clients (which I also did an internship for Proper ICT) and Android Mobile Development. Finally, I can proudly say that the field that I am most passionate
+                    about is iOS Mobile Development. I love the process of designing apps for the Apple ecosystem and then building them using my favorite programming language, Swift. I build apps that conform to MVC design pattern, I am dedicated to
+                    clean object-oriented code, and use git for version control. I have experience with Core Data (and Realm), UserDefaults, Core Animation, thread handling, CoreML, UIKit, various cocapods libraries, SwiftUI, ARKit, WebKit, Core Location,
+                    Auto-Layouts, Storyboard and more (learning new amazing frameworks/libraries every week).
                 </p>
 
 
                 <div class="social-media">
                     <ul class="nav-list">
                         <li>
-                            <a href="#" class="icon-link">
-                                <i class="fab fa-facebook-square"></i>
+                            <a href="https://www.linkedin.com/in/donat-kabashi-1955aa165/" class="icon-link">
+                                <i class="fab fa-linkedin" data-aos="flip-right" data-aos-delay="1000"></i>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://github.com/DKabashi" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.instagram.com/donat_kabashi/" class="icon-link">
+                                <i class="fab fa-instagram-square" data-aos="flip-left" data-aos-delay="700"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-link">
-                                <i class="fab fa-twitter-square"></i>
+                            <a href="https://twitter.com/donatkabashi" class="icon-link">
+
+                                <i class="fab fa-twitter-square" data-aos="flip-left" data-aos-delay="400"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-link">
-                                <i class="fab fa-dribbble-square"></i>
+                            <a href="mailto: donatkabashi@gmail.com" class="icon-link">
+
+                                <i class="fas fa-envelope-square" data-aos="flip-left"></i>
                             </a>
                         </li>
                     </ul>
+
+
+
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="myChart" data-aos="zoom-out" data-aos-delay="1200"></canvas>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Services</h1>
-                <h6>What I can do for you</h6>
-            </div>
-            <div class="my-skills">
-                <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h1>Web Design</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iste, autem, voluptate quam inventore dolorum quos iure, a temporibus explicabo facilis. Sit et asperiores dolorum cupiditate repellendus voluptates animi non.</p>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="600">
-                    <div class="icon-container">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h1>Web Development</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iste, autem, voluptate quam inventore dolorum quos iure, a temporibus explicabo facilis. Sit et asperiores dolorum cupiditate repellendus voluptates animi non.
-                    </p>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="900">
-                    <div class="icon-container">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h1>Product Strategy</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iste, autem, voluptate quam inventore dolorum quos iure, a temporibus explicabo facilis. Sit et asperiores dolorum cupiditate repellendus voluptates animi non.
-                    </p>
-                </div>
-            </div>
 
-        </div>
 
-    </section>
 
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Portfolio</h1>
-                <h6>View some of my recent work</h6>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="images/SimpleNewsPresentation.png" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-                    <h6>Web Development</h6>
-                    <h1>Blog Website</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto tempore ea quae porro non commodi nostrum praesentium, ipsam ducimus deleniti officiis reiciendis, quasi dolorum natus cumque mollitia quis temporibus?</p>
-                    <a href="#" class="cta">View Details</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
-                    <h6>Web Design</h6>
-                    <h1>Layout</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto tempore ea quae porro non commodi nostrum praesentium, ipsam ducimus deleniti officiis reiciendis, quasi dolorum natus cumque mollitia quis temporibus?
-                    </p>
-                    <a href="#" class="cta">View Details</a>
-                </div>
-                <div class="portfolio-img " data-aos="fade-left" data-aos-delay="1200">
-                    <img src="images/portitem2.jpeg" alt="">
-                </div>
 
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
-                    <img src="images/portitem3.jpeg" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
-                    <h6>Web Design</h6>
-                    <h1>Product Sketch</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto tempore ea quae porro non commodi nostrum praesentium, ipsam ducimus deleniti officiis reiciendis, quasi dolorum natus cumque mollitia quis temporibus?
-                    </p>
-                    <a href="#" class="cta">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="experience" id="experience">
+    <!-- <section class="experience" id="experience">
         <div class="container">
             <div class="section-heading">
                 <h1>Work Experience</h1>
@@ -234,19 +358,85 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-    </section>
+    </section> -->
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
 
         </div>
         <p>&copy; 2020 Donat Kabashi</p>
-    </footer> -->
+        <p>Made with <i class="fas fa-heart"></i> using <i class="devicon-html5-plain-wordmark colored"></i> <i class="devicon-css3-plain-wordmark colored"></i></i> <i class="fab fa-js"></i> and <i class="devicon-jquery-plain-wordmark colored"></i></p>
+
+    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script>
+        var chart = new Chart(document.getElementById('myChart'), {
+
+            type: 'horizontalBar',
+            data: {
+                labels: ["Swift", "Javascript", "Git + Github", "Java", "HTML + CSS + Bootstrap", "Wordpress", "PHP", "SQL", "Unity + C#", "Python", "Adobe Photoshop", "Adobe Premiere Pro"],
+                datasets: [{
+                    label: "Estimated skill level (7 for advanced)",
+                    backgroundColor: ["#fc8a37", "#f1da1b", "#191e22", "#D5472F", "#6836B1", "#207297", "#7478AE", "#82959E", "#97468F", "#356C9C", "#27C7E4", "#F276F9"],
+                    data: [8.3, 7.4, 6.8, 6.5, 8, 5.2, 4.3, 7, 6, 1.5, 6, 1.5]
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Technical Skills'
+                },
+                scales: {
+
+                    xAxes: [{
+
+
+                        ticks: {
+                            min: 0,
+                            max: 10,
+                            stepSize: 1,
+                            suggestedMin: 0.5,
+                            suggestedMax: 5.5,
+                            callback: function(label, index, labels) {
+                                switch (label) {
+                                    case 1:
+                                        return 'Basic Knowledge';
+                                    case 3:
+                                        return 'Limited Experience';
+                                    case 5:
+                                        return 'Intermediate';
+                                    case 7:
+                                        return 'Advanced';
+                                    case 9:
+                                        return 'Expert';
+                                }
+                            }
+                        }
+                    }],
+                    yAxes: [{
+
+                        gridLines: {
+                            display: false
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+
+
 </body>
+
+
 
 </html>

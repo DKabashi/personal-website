@@ -41,6 +41,9 @@ a {
 p {
     font-size: 1.8rem;
     font-weight: 300;
+    color: rgba(26, 26, 26, .7);
+    font-family: monospace, serif;
+    line-height: 1.6;
 }
 
 img {
@@ -66,10 +69,9 @@ img {
     margin-bottom: 10rem;
 }
 
-
-/* .section-heading h1 {
+.section-heading h1 {
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, .3);
+    color: black;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -83,8 +85,12 @@ img {
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.75)
-} */
+    background-color: var(--combo1);
+}
+
+#services img {
+    width: 100%;
+}
 
 .section-heading h1::before {
     width: 10rem;
@@ -122,7 +128,16 @@ img {
 
 header {
     widows: 100%;
-    height: 120vh;
+    height: 100vh;
+    margin-bottom: 20%;
+}
+
+.services {
+    margin-bottom: 20%;
+}
+
+.portfolio {
+    margin-bottom: 20%;
 }
 
 .top-nav {
@@ -131,7 +146,7 @@ header {
     position: fixed;
     top: -150vh;
     z-index: 50;
-    background-color: var(--combo1);
+    background-color: rgba(0, 191, 166, 0.8);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -151,13 +166,14 @@ li {
 }
 
 .nav-link {
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: 800;
     padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, var(--combo1), var(--combo2));
+    background: linear-gradient(to top, var(--textSecondary), var(--combo2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -192,9 +208,10 @@ li {
     border-radius: .8rem;
 }
 
-.open .bar {
+
+/* .open .bar {
     background: linear-gradient(to right, white, var(--combo1));
-}
+} */
 
 .bar.half {
     width: 50%;
@@ -232,6 +249,10 @@ li {
 .landing-text img {
     width: 50%;
     height: auto;
+}
+
+.landing-text p {
+    line-height: initial;
 }
 
 .landing-text .description {
@@ -312,9 +333,20 @@ li {
 /*Start about*/
 
 .about .container {
-    display: flex;
     align-items: center;
     justify-content: center
+}
+
+.aboutIMG {
+    margin: auto;
+    padding-top: 10rem;
+    width: 350px;
+}
+
+.about-details p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 .about-heading {
@@ -350,18 +382,37 @@ li {
 .social-media i {
     font-size: 5rem;
     transition: color 650ms;
+    color: rgba(192, 192, 192, 0.4);
 }
 
-.fa-facebook-square:hover {
-    color: #4267b2;
+.fa-linkedin:hover {
+    color: #0177B5;
 }
 
 .fa-twitter-square:hover {
     color: #38a1f3;
 }
 
-.fa-dribbble-square:hover {
-    color: var(--combo2);
+.fa-envelope-square:hover {
+    color: #EE615F;
+}
+
+.fa-instagram-square:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-github-square:hover {
+    color: #23282E;
+}
+
+.chart-container {
+    position: relative;
+    width: 90%;
+    height: 450px;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 
@@ -374,7 +425,7 @@ li {
     margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
+    grid-gap: 15rem;
     text-align: center;
 }
 
@@ -388,6 +439,7 @@ li {
 
 .skill h1 {
     text-transform: uppercase;
+    font-size: 2rem;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
@@ -419,7 +471,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 20rem;
+}
+
+#loadMore {
+    display: none;
 }
 
 .portfolio-item:last-child {
@@ -430,21 +486,65 @@ li {
     flex: 1;
 }
 
+.portfolio-img img {
+    transition: transform .3s;
+    z-index: 100;
+}
+
+.portfolio-img img:hover {
+    transform: scale(1.5) translateX(-5rem);
+}
+
+.has-margin-right img:hover {
+    transform: scale(1.5) translateX(5rem);
+}
+
 .portfolio-description {
     flex: 1;
 }
 
-.portfolio-description h1 {
+.active {
+    border: none;
+}
+
+.active .filter {
+    font-weight: 800;
+}
+
+.active {
+    color: var(--combo1);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.techUsed {
+    margin-top: 2.5rem;
+}
+
+.portfolio-description .fab {
     font-size: 3rem;
-    font-weight: 300;
-    margin: 1rem 0;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.portfolio-description h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .portfolio-description h6 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: 0.3;
+    color: rgba(50, 49, 49, 0.5)
+}
+
+.portfolio-description i {
+    font-size: 2.1rem;
 }
 
 .portfolio-description .cta {
@@ -452,12 +552,12 @@ li {
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #3883ff;
+    color: var(--combo2);
     transition: color 650ms;
 }
 
 .portfolio-description .cta:hover {
-    color: #2f67cd;
+    color: #145c4f;
 }
 
 
@@ -578,7 +678,7 @@ input[typle="submit"]:hover {
 .copyright {
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: var(--combo2);
     padding: 2rem 0;
     position: relative;
 }
@@ -597,13 +697,64 @@ input[typle="submit"]:hover {
 }
 
 .up i {
-    color: #16162d;
+    color: var(--combo2);
     font-size: 2rem;
     margin: auto;
 }
 
 .copyright p {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
+    color: white;
+    padding: 5px;
+}
+
+.copyright .fab,
+.devicon-jquery-plain-wordmark,
+.devicon-html5-plain-wordmark,
+.devicon-css3-plain-wordmark {
+    font-size: 3rem;
+    transition: font-size 1s;
+}
+
+.copyright .fab:hover,
+.devicon-jquery-plain-wordmark:hover,
+.devicon-html5-plain-wordmark:hover,
+.devicon-css3-plain-wordmark:hover {
+    font-size: 5rem;
+    background-color: var(--combo1);
+}
+
+.btn-group {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+.btn {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    padding: 5%;
+    transition: color 650ms;
+}
+
+.btn:hover {
+    color: gray;
+}
+
+.btn:focus:hover {
+    color: var(--combo1);
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-css3-alt {
+    color: #2A62EA;
+}
+
+.fa-js {
+    color: #F0DA49;
 }
 
 
@@ -614,7 +765,7 @@ input[typle="submit"]:hover {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 rgba(0, 255, 187, 0.99);
     }
     70% {
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
@@ -853,6 +1004,17 @@ input[typle="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
     body {
         /* background: url("images/sitebg2.jpg") no-repeat center fixed; */
         background-size: cover;
@@ -900,6 +1062,13 @@ input[typle="submit"]:hover {
     .timeline .date::after {
         left: -5.9rem;
     }
+    #quote {
+        border-left: initial;
+    }
+    .btn {
+        font-size: 3rem;
+        padding: 3%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -944,6 +1113,23 @@ input[typle="submit"]:hover {
     }
     .up {
         right: 2rem;
+    }
+    .copyright .fab,
+    .devicon-jquery-plain-wordmark,
+    .devicon-html5-plain-wordmark,
+    .devicon-css3-plain-wordmark {
+        font-size: 2rem;
+        transition: font-size 1s;
+    }
+    .copyright .fab:hover,
+    .devicon-jquery-plain-wordmark:hover,
+    .devicon-html5-plain-wordmark:hover,
+    .devicon-css3-plain-wordmark:hover {
+        font-size: 3rem;
+        background-color: var(--combo1);
+    }
+    .copyright p {
+        font-size: 1.6rem;
     }
 }
 

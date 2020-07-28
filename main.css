@@ -926,7 +926,10 @@ input[typle="submit"]:hover {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 819px) and (orientation: landscape) {
+@media (min-width: 0px) and (max-width: 819px) and (orientation: landscape) {
+    header {
+        height: 120vh;
+    }
     .logo {
         width: 35%;
         content: url(images/DKLogo.png);
@@ -967,7 +970,7 @@ input[typle="submit"]:hover {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
     .logo {
         width: 45%;
         content: url(images/DKLogo2.png);
@@ -1131,6 +1134,9 @@ input[typle="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        height: 110vh;
+    }
     .menu-toggler {
         /* top: 2rem;
         right: 2rem; */

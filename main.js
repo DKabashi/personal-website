@@ -86,6 +86,9 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    setTimeout(function() {
+        $('.arrow-down').show(); // or fade, css display however you'd like.
+    }, 1);
 
     AOS.init({
         easing: 'ease',

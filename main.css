@@ -1091,13 +1091,13 @@ input[typle="submit"]:hover {
     .social-media i:hover {
         color: rgba(192, 192, 192, 0.4);
     }
-    .fa-linkedin {
+    .about .fa-linkedin {
         color: #0177B5;
     }
-    .fa-twitter-square {
+    .about .fa-twitter-square {
         color: #38a1f3;
     }
-    .fa-envelope-square {
+    .about .fa-envelope-square {
         color: #EE615F;
     }
     .fa-instagram-square {

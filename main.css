@@ -474,6 +474,27 @@ li {
     margin-bottom: 20rem;
 }
 
+.portfolio .btn-group {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+.portfolio .btn {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    padding: 5%;
+    transition: color 650ms;
+}
+
+.portfolio .btn:hover {
+    color: gray;
+}
+
+.portfolio .btn:focus:hover {
+    color: var(--combo1);
+}
+
 #loadMore {
     display: none;
 }
@@ -515,7 +536,7 @@ li {
     color: var(--combo1);
 }
 
-.btn:focus {
+.portfolio .btn:focus {
     outline: none;
 }
 
@@ -722,27 +743,6 @@ input[typle="submit"]:hover {
 .devicon-css3-plain-wordmark:hover {
     font-size: 5rem;
     background-color: var(--combo1);
-}
-
-.btn-group {
-    text-align: center;
-    margin-bottom: 15rem;
-}
-
-.btn {
-    background: none;
-    border: none;
-    font-size: 4rem;
-    padding: 5%;
-    transition: color 650ms;
-}
-
-.btn:hover {
-    color: gray;
-}
-
-.btn:focus:hover {
-    color: var(--combo1);
 }
 
 .fa-heart {
@@ -1068,7 +1068,7 @@ input[typle="submit"]:hover {
     #quote {
         border-left: initial;
     }
-    .btn {
+    .portfolio .btn {
         font-size: 3rem;
         padding: 3%;
     }
@@ -1115,6 +1115,19 @@ input[typle="submit"]:hover {
         margin-top: 5%;
         margin-left: 5%;
     }
+    .portfolio .btn {
+        background: none;
+        border: none;
+        font-size: 4rem;
+        padding: 5%;
+        transition: color 650ms;
+    }
+    .portfolio .btn:hover {
+        color: var(--combo1);
+    }
+    /* .portfolio .btn:focus:hover {
+        color: var(--combo1);
+    } */
 }
 
 @media screen and (max-width: 600px) {

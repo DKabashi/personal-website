@@ -411,10 +411,9 @@ li {
 
 .chart-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 450px;
     margin-top: 5%;
-    margin-left: 5%;
 }
 
 
@@ -1085,6 +1084,36 @@ input[typle="submit"]:hover {
     }
     .has-margin-right img:hover {
         transform: none;
+    }
+    .social-media i {
+        transition: none;
+    }
+    .social-media i:hover {
+        color: rgba(192, 192, 192, 0.4);
+    }
+    .fa-linkedin {
+        color: #0177B5;
+    }
+    .fa-twitter-square {
+        color: #38a1f3;
+    }
+    .fa-envelope-square {
+        color: #EE615F;
+    }
+    .fa-instagram-square {
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-github-square {
+        color: #23282E;
+    }
+    .chart-container {
+        position: relative;
+        width: 90%;
+        height: 450px;
+        margin-top: 5%;
+        margin-left: 5%;
     }
 }
 

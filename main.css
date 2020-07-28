@@ -15,6 +15,12 @@
     box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -344,8 +350,8 @@ li {
 }
 
 .about-details p {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: left;
 }
 
@@ -369,10 +375,6 @@ li {
 .profile-img {
     flex: 1;
     margin-right: 5rem;
-}
-
-.about-details {
-    flex: 1;
 }
 
 .social-media {

@@ -38,6 +38,7 @@ body {
 section {
     padding: 6rem 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a {
@@ -351,8 +352,6 @@ li {
 }
 
 .about-details p {
-    margin-left: 10%;
-    margin-right: 10%;
     text-align: left;
 }
 
@@ -429,7 +428,6 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 15rem;
-    text-align: center;
 }
 
 .skill {
@@ -1031,6 +1029,9 @@ input[typle="submit"]:hover {
     .nav-list {
         flex-direction: column;
     }
+    .my-skills {
+        grid-gap: 3rem;
+    }
     li {
         margin: 2rem 0;
     }
@@ -1074,6 +1075,19 @@ input[typle="submit"]:hover {
     }
 }
 
+@media (hover: none) {
+    .portfolio-img img {
+        transition: none;
+        z-index: initial;
+    }
+    .portfolio-img img:hover {
+        transform: none;
+    }
+    .has-margin-right img:hover {
+        transform: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .menu-toggler {
         /* top: 2rem;
@@ -1087,6 +1101,9 @@ input[typle="submit"]:hover {
     }
     .nav-link {
         font-size: 3.5rem;
+    }
+    .services .container {
+        flex-direction: column;
     }
     .about .container {
         flex-direction: column;

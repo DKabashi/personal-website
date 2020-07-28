@@ -1068,7 +1068,7 @@ input[typle="submit"]:hover {
     #quote {
         border-left: initial;
     }
-    .portfolio .btn {
+    html .portfolio .btn {
         font-size: 3rem;
         padding: 3%;
     }

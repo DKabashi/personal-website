@@ -88,7 +88,16 @@ $(document).ready(function() {
 
     setTimeout(function() {
         $('.arrow-down').show(); // or fade, css display however you'd like.
-    }, 1);
+    }, 5000);
+
+    var lastScrollTop = 0;
+    $(window).scroll(function(event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            $('.arrow-down').hide();
+        }
+        lastScrollTop = st;
+    });
 
     AOS.init({
         easing: 'ease',

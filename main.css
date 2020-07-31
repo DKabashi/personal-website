@@ -886,7 +886,7 @@
     
     @media (min-width: 1000px) and (max-width: 1024px) {
         .landing-text img {
-            content: url(images/dk2.png);
+            content: url(images/dk2.jpg);
             width: 65%;
         }
         .landing-text #buttons {
@@ -897,7 +897,7 @@
     
     @media (min-width: 481px) and (max-width: 999px) {
         .landing-text img {
-            content: url(images/dk2.png);
+            content: url(images/dk2.jpg);
             width: 60%;
         }
         .landing-text #buttons {
@@ -908,7 +908,7 @@
     @media (min-width: 481px) and (max-width: 1024px) {
         .logo {
             width: 30%;
-            content: url(images/DKLogo2.png);
+            content: url(images/DKLogo2.jpg);
             margin-bottom: 3%;
         }
         .landingButton {
@@ -941,11 +941,11 @@
     @media (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {
         .logo {
             width: 30%;
-            content: url(images/DKLogo.png);
+            content: url(images/DKLogo.jpg);
             margin-bottom: 3%;
         }
         .landing-text img {
-            content: url(images/dk.png);
+            content: url(images/dk.jpg);
             width: 55%;
         }
     }
@@ -960,10 +960,10 @@
         }
         .logo {
             width: 35%;
-            content: url(images/DKLogo.png);
+            content: url(images/DKLogo.jpg);
         }
         .landing-text img {
-            content: url(images/dk.png);
+            content: url(images/dk.jpg);
             width: 55%;
         }
         .landingButton {
@@ -999,7 +999,7 @@
     @media (min-width: 0px) and (max-width: 480px) {
         .logo {
             width: 45%;
-            content: url(images/DKLogo2.png);
+            content: url(images/DKLogo2.jpg);
             margin-bottom: 5%;
         }
         .landingButton {
@@ -1027,7 +1027,7 @@
             height: 2.5rem;
         }
         .landing-text img {
-            content: url(images/dk2.png);
+            content: url(images/dk2.jpg);
             width: 60%;
         }
     }

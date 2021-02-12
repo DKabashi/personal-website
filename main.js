@@ -12,25 +12,25 @@ $(document).ready(function() {
     $('nav a[href*="#"]').on('click', function() {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
-        }, 6000);
+        }, 1500);
     });
 
     $('#up').on('click', function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 6000);
+        }, 1000);
     });
 
     $('#readAboutMe').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.about').offset().top - 100
-        }, 7000);
+        }, 1500);
     });
 
     $('#viewProjects').on('click', function() {
         $('html, body').animate({
             scrollTop: $('.portfolio').offset().top - 100
-        }, 6000);
+        }, 1000);
     });
 
 
@@ -102,7 +102,7 @@ $(document).ready(function() {
     AOS.init({
         easing: 'ease',
         duration: 1800,
-        // once: true
+        once: true
     });
 
 
